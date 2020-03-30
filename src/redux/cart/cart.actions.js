@@ -5,3 +5,7 @@ export const toggleCartHidden = () => ({
 })
 
 //no need in payload in this case cause the reduces is changed the state value on its own (to the opposite of the original state)
+export const addItem = item => ({
+	type : CartActionTypes.ADD_ITEM,
+	payload: item
+})
